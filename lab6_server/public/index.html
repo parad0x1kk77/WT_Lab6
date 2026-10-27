@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab06: CV</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="lab4.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<dialog id="contact-modal">
+  <h2>Зворотний зв'язок</h2>
+  <form id="contact-form" novalidate>
+    <label>Ім’я <input type="text" name="name" required></label>
+    <label>Email <input type="email" name="email" required></label>
+    <label>Тема звернення
+      <select name="topic" required>
+        <option value="" selected disabled>Оберіть тему</option>
+        <option value="question">Питання</option>
+        <option value="cooperation">Співпраця</option>
+        <option value="other">Інше</option>
+      </select>
+    </label>
+    <label>Заголовок <input type="text" name="subject" required></label>
+    <label>Повідомлення <textarea name="message" rows="4" required></textarea></label>
+    <p id="form-status" role="status"></p>
+    <div class="modal-actions">
+      <button type="submit">Надіслати</button>
+      <button type="button" id="modal-close">Закрити</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="resume-container">
+<aside class="sidebar">
+<header>
+<h1>Борисевич Олександр</h1>
+<h2>Cybersecurity спеціаліст</h2>
+<h2>Студент Національного університету «Львівська політехніка»</h2>
+<h2>Where to Find Me</h2>
+<ul>
+<li>Email: <a href="mailto:oleksandr.borysevych.kb.2025@lpnu.ua">click</a></li>
+<li>GitHub: <a href="https://github.com/parad0x1kk77">click</a></li>
+</ul>
+</header>
+</aside>
+
+<main class="main-content">
+<section>
+<h2>About Me</h2>
+<p>Цікавлюся інформаційною безпекою, мережевими технологіями та розробкою програмного забезпечення</p>
+</section>
+
+<section>
+<h2>My experience</h2>
+<ul>
+<li><strong>Аудит безпеки:</strong> Розробка документації СУІБ та матриці загроз для компанії ROZETKA</li>
+<li><strong>Мережі:</strong> Налаштування мережевих топологій у Cisco Packet Tracer</li>
+<li><strong>Практична кібербезпека:</strong> Вирішення завдань з веббезпеки та роботи в Linux-терміналі</li>
+<li><strong>Дослідження:</strong> Аналіз перших мережевих черв'яків та ransomware у рамках вивчення кібербезпеки</li>
+</ul>
+</section>
+
+<section>
+<h2>My skills</h2>
+<ul>
+<li><strong>Програмування:</strong> Python, C#, основи SQL.</li>
+<li><strong>Інформаційна безпека:</strong> розуміння стандартів ISO/IEC 27001, основи аудиту СУІБ, аналіз загроз</li>
+<li><strong>Мережеві технології:</strong> основи маршрутизації та комутації, принципи побудови комп'ютерних мереж</li>
+<li><strong>Інструменти:</strong> Git, ОС Linux, Cisco Packet Tracer, Visual Studio, Visual Studio Code, PyCharm</li>
+</ul>
+</section>
+
+<section id="reviews">
+<h2>Відгуки попередніх роботодавців:</h2>
+<div id="reviews-list">Завантаження відгуків..</div>
+</section>
+</main>
+</div>
+
+<footer class="site-footer">
+<p>To be continued.. :)</p>
+<h3>Інформація з localStorage</h3>
+<ul id="storage-info"></ul>
+</footer>
+
+<button id="theme-toggle" type="button">Нічна тема</button>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#storage-info { list-style: none; padding: 0; margin: 0; font-size: 0.8rem; }
+#storage-info li { display: inline-block; margin: 2px 12px; }
+
+.review { margin: 0 0 12px; padding: 10px 14px; border-left: 4px solid var(--accent); background: var(--review-bg); }
+.review h3 { margin: 0 0 2px; font-size: 1rem; }
+.review .review-email { margin: 0 0 6px; font-size: 0.85rem; opacity: 0.8; }
+.review p { margin: 0; }
+
+button { padding: 8px 14px; border: 2px solid var(--accent); border-radius: 8px; background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+button:hover { filter: brightness(1.15); }
+
+#contact-modal { width: min(480px, 92vw); padding: 20px; border: 2px solid var(--accent); border-radius: 10px; background: var(--panel); color: var(--text); }
+#contact-modal::backdrop { background: rgba(0, 0, 0, 0.6); }
+#contact-form { display: grid; gap: 12px; }
+#contact-form label { display: grid; gap: 4px; }
+#contact-form input, #contact-form textarea, #contact-form select { padding: 8px; font: inherit; background: var(--input-bg); color: var(--text); border: 1px solid var(--input-border); border-radius: 6px; }
+#contact-form select option { background: var(--input-bg); color: var(--text); }
+
+#theme-toggle { position: fixed; top: 12px; right: 12px; z-index: 100; }
